@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Success!</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="title">
+            Talitha's Food Barn
+        </div>
+    </div>
+    <div class="info-container">
+        
+        <div class="info-title">My Verified Profile</div>
+        <div class="verified">
+            <img src="/static/bx-check-circle.svg">
+        </div>
+        <div class="info-details">
+            <div class="info-details-row">
+                <div class="info-details-label">Unique ID</div>
+                <div class="info-details-value">food_<%= sub.substring(0, 10) %></div>
+            </div>
+            <div class="info-details-row">
+                <div class="info-details-label">Name</div>
+                <div class="info-details-value"><%= name %></div>
+            </div>
+            <div class="info-details-row">
+                <div class="info-details-label">Mobile</div>
+                <div class="info-details-value"><%= mobile_number %></div>
+            </div>
+            <div class="info-details-row">
+                <div class="info-details-label">Address</div>
+                <div class="info-details-value"><%= registered_address %></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
